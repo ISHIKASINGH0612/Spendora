@@ -12,7 +12,7 @@ const Header = async () => {
   return (
     <header className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b">
       <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <Link href="/">
+        {/* <Link href="/">
           <Image
             src={"/logo.png"}
             alt="Welth Logo"
@@ -20,7 +20,9 @@ const Header = async () => {
             height={60}
             className="h-12 w-auto object-contain"
           />
-        </Link>
+        </Link> */}
+
+        <div  style={{fontWeight: "bold", fontSize: "24px"}}>SPENDORA</div>
 
         {/* Navigation Links - Different for signed in/out users */}
         <div className="hidden md:flex items-center space-x-8">
