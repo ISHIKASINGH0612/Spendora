@@ -61,3 +61,11 @@ TAILWIND CSS
 
 SHADCN UI
 **shadcn/ui** (often pronounced *shadcn UI*) is a modern UI component library built on top of **Tailwind CSS** and **Radix UI** that provides accessible, customizable, and production-ready components for React and Next.js applications. Unlike traditional UI libraries, shadcn/ui does not install components as a dependency; instead, it lets developers copy the actual component code into their project, giving full control over styling and behavior. It is needed because it helps developers build clean, consistent, and accessible user interfaces quickly while still maintaining flexibility, scalability, and full ownership of the code—making it ideal for professional, real-world projects.
+
+CLERK
+Clerk is an authentication and user-management platform that helps developers easily add features like sign-up, login, logout, user profiles, and session management to web applications. Instead of building authentication from scratch, Clerk provides ready-made, secure components and APIs that work seamlessly with modern frameworks like Next.js and React. It is needed because authentication is complex and security-sensitive, and Clerk handles this complexity by offering built-in security, social logins, email/password auth, and role-based access control, allowing developers to focus more on building core application features rather than managing user identity and security logic themselves.
+
+first we create the authentication through create applcation on Clerk
+than we install clerk at vscode
+then we add .env files that contain secret keys and variables
+then we add middleware file...that runs before tis authentication code to initialize clerk
