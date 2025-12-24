@@ -1,9 +1,11 @@
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
+
 
 export default function Home() {
   return (
     <div>
-      <h1>Welcome to My Next.js App</h1>
+     <Button variant="destructive">mar kyun nhi jaati</Button>
     </div>
   );
 }

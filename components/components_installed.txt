@@ -1,0 +1,4 @@
+All are installed from shadcn UI
+
+1. button component
+2. card component
