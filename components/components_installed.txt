@@ -2,3 +2,16 @@ All are installed from shadcn UI
 
 1. button component
 2. card component
+3. badge
+4. calendar
+5. checkbox
+6. drawer
+7. dropdown menu
+8. input
+9. popover
+10.progress 
+11. select
+12. switch
+13. table
+14. tooltip
+
