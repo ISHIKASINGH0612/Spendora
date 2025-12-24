@@ -1,0 +1,63 @@
+APP FOLDER
+📁 app/ (Core folder)
+
+The app folder defines the routing system and UI hierarchy of the application. Every folder inside app represents a route.
+
+📄 layout.js
+
+layout.js defines the overall structure of the application that persists across pages. It usually contains common UI elements like Navbar, Sidebar, Footer, Theme Providers, and global wrappers. This file is shared by all routes under it and is rendered only once.
+
+👉 Example use: header, footer, authentication provider, theme provider.
+
+📄 page.js
+
+page.js represents the actual content of a route. Each page.js maps to a URL and contains code specific to that page only. It is rendered inside the corresponding layout.js.
+
+👉 Example: home page content, dashboard content, profile page UI.
+
+📄 loading.js
+
+loading.js is used to show a loading UI while a page or layout is being fetched or rendered. It improves user experience during data loading or route transitions.
+
+👉 Example: skeleton loader, spinner.
+
+📄 error.js
+
+error.js handles runtime errors that occur in a route or layout. It allows you to show a custom error UI instead of breaking the whole app.
+
+👉 Example: “Something went wrong” screen with retry button.
+
+📄 not-found.js
+
+not-found.js is shown when a route does not exist. It customizes the 404 page for the application.
+
+👉 Example: “Page not found” message with navigation link.
+
+📄 template.js
+
+template.js is similar to layout.js but re-renders on every navigation, whereas layout persists. It is used when you want a fresh state for each route change.
+
+👉 Example: animations or page-level state resets.
+
+📁 Route folders (e.g. dashboard/, profile/)
+
+Each folder inside app represents a route segment. These folders can contain their own page.js, layout.js, loading.js, etc., allowing nested routing and layouts.
+
+👉 app/dashboard/page.js → /dashboard
+
+📁 api/
+
+The api folder is used to define backend API routes using Route Handlers. These run on the server and are used for data fetching, authentication, or database operations.
+
+👉 Example: /api/login, /api/users
+
+
+
+TAILWIND CSS
+
+**Tailwind CSS** is a utility-first CSS framework that allows developers to style user interfaces directly within HTML or JSX using small, reusable utility classes such as spacing, colors, typography, and layout. Instead of writing large custom CSS files and creating many class names, Tailwind provides pre-defined utility classes that make UI development faster, more consistent, and easier to maintain. It is needed because it significantly improves development speed, reduces unused CSS, ensures design consistency across components, and works especially well with modern frameworks like React and Next.js. By eliminating context switching between CSS and markup, Tailwind CSS helps developers focus more on building features while still creating clean, responsive, and professional user interfaces.
+
+
+
+SHADCN UI
+**shadcn/ui** (often pronounced *shadcn UI*) is a modern UI component library built on top of **Tailwind CSS** and **Radix UI** that provides accessible, customizable, and production-ready components for React and Next.js applications. Unlike traditional UI libraries, shadcn/ui does not install components as a dependency; instead, it lets developers copy the actual component code into their project, giving full control over styling and behavior. It is needed because it helps developers build clean, consistent, and accessible user interfaces quickly while still maintaining flexibility, scalability, and full ownership of the code—making it ideal for professional, real-world projects.
